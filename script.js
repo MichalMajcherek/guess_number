@@ -25,7 +25,7 @@ document.querySelector(".check").addEventListener("click", function () {
     displayMessage("No Number! 🚫");
 
     // When the input isn't between 0 and 20
-  } else if (guess <= 0 || guess >= 20) {
+  } else if (guess < 0 || guess > 20) {
     displayMessage("Between 1 and 20!");
   } else if (guess === secretNumber) {
     displayMessage("You were lucky! 🍀");
